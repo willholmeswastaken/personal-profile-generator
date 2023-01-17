@@ -58,7 +58,7 @@ const Home: NextPage = () => {
           </main>
           <footer className="text-center h-16 sm:h-20 w-full sm:pt-2 pt-4 mt-5 flex sm:flex-row flex-col justify-between items-center px-3 space-y-3 sm:mb-0 mb-3 text-white">
             <div>Powered by <Link href="https://openai.com/" target="_blank" rel="noreferrer" className="font-bold hover:underline transition underline-offset-2">OpenAI </Link>, Created by <Link href="https://willholmes.dev/" target="_blank" rel="noreferrer" className="font-bold hover:underline transition underline-offset-2">Will Holmes</Link>.</div>
-            <div className="flex space-x-4 pb-4 sm:pb-0">Inspired by&nbsp;<Link href="https://www.twitterbio.com/" target="_blank" rel="noreferrer" className="font-bold hover:underline transition underline-offset-2">TwitterBio</Link>.</div>
+            <div className="flex space-x-4 sm:pb-4">Inspired by&nbsp;<Link href="https://www.twitterbio.com/" target="_blank" rel="noreferrer" className="font-bold hover:underline transition underline-offset-2">TwitterBio</Link>.</div>
           </footer>
         </div>
       </div>

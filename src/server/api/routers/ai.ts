@@ -13,12 +13,14 @@ export const aiRouter = createTRPCRouter({
     const openai = new OpenAIApi(configuration);
     const response = await openai.createCompletion({
       model: "text-ada-001",
-      prompt: `Generate a professional profile maximum of 100 words and base it on this context: ${input}`,
+      prompt: `Generate a professional profile with a maximum of 100 words and base it on this context: ${input}`,
       max_tokens: 200,
       temperature: 0.5,
       top_p: 1,
       n: 1,
     });
+
+    console.log(response.data.choices);
 
     return response.data.choices[0]?.text ?? "";
   }),

@@ -44,7 +44,7 @@ const Home: NextPage = () => {
               <div className="flex flex-col gap-y-4 w-full pt-10 max-w-lg">
                 <label className="text-xl text-white font-semibold" htmlFor="bioContext">Tell us a bit about yourself...</label>
                 <textarea id="bioContext" value={profileContext} onChange={onProfileContextChange} className="focus:border-black focus:ring-black border border-slate-300 rounded-lg shadow-md w-full h-32 p-2" />
-                <button type='button' onClick={onGenerateProfile} className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:opacity-90 text-white shadow-md rounded-lg w-full h-10 flex flex-row items-center justify-center">
+                <button type='button' disabled={aiGenerationMutation.isLoading} onClick={onGenerateProfile} className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 hover:opacity-90 text-white shadow-md rounded-lg w-full h-12 flex flex-row items-center justify-center">
                   {
                     aiGenerationMutation.isLoading && (<svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                       <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>

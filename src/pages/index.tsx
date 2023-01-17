@@ -25,8 +25,11 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Personal Profile Generator</title>
+        <title>AI Personal Profile Generator</title>
         <meta name="description" content="Use AI to generate a personal profile about you" />
+        <meta property="og:title" content="AI Personal Profile Generator" />
+        <meta property="og:image" content="https://og-image.vercel.app/**AI%20Personal%20Profile%20Generator**.png?theme=dark&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-bw-logo.svg" />
+        <meta property="og:url" content="https://personal-profile-generator.vercel.app/" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-[#23272a]">
